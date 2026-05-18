@@ -7,108 +7,98 @@
   <meta name="description" content="Casa do Oleiro Church - Nosso maior chamado e amar voce." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@600&family=Kaushan+Script&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <img class="brand-logo" src="assets/cdo.jpg" alt="Logo Casa do Oleiro" />
-      <div>
-        <p class="brand-title">Casa do Oleiro Church</p>
-        <p class="brand-sub">Igreja</p>
-      </div>
-    </div>
-    <a class="btn btn-ghost" href="#contato">Fale conosco</a>
-  </header>
-
   <main>
-    <section id="destaques" class="section">
-      <h2>Destaques</h2>
-      <div class="chips">
-        <span>CONVIDADO</span>
-        <span>AGENDA</span>
-        <span>PERFIS</span>
-        <span>CONTRIBUICAO</span>
-        <span>YOUTUBE</span>
-      </div>
-    </section>
-
-    <section class="banner-section" aria-label="Banner da igreja">
+    <section class="banner-section full-bleed" aria-label="Banner da igreja">
       <img class="banner-image" src="assets/banner-enhanced.png" alt="Banner Casa do Oleiro Church" />
     </section>
 
-    <section class="phrase-section" aria-label="Frase da igreja">
+    <section class="phrase-section full-bleed" aria-label="Frase da igreja">
       <img class="phrase-image" src="assets/yt_banner.jpg" alt="Nosso maior chamado e amar voce" />
     </section>
 
-    <section class="hero section">
-      <p class="hero-copy">Uma comunidade de fe para transformar vidas atraves do amor de Jesus.</p>
+    <section class="section ministries-hub" id="ministerios">
+      <div class="carousel-wrap" aria-label="Carrossel de ministerios">
+        <div class="carousel-track" id="ministryCarousel">
+          <button class="ministry-card is-active" data-key="cultos">Cultos</button>
+          <button class="ministry-card" data-key="homens">Rede de Homens</button>
+          <button class="ministry-card" data-key="mulheres">Rede de Mulheres</button>
+          <button class="ministry-card" data-key="conect">Conect</button>
+          <button class="ministry-card" data-key="achados">Achados</button>
+          <button class="ministry-card" data-key="ted">TED Escola Biblica</button>
+          <button class="ministry-card" data-key="kids">Kids</button>
+          <button class="ministry-card" data-key="evangelismo">Evangelismo</button>
+          <button class="ministry-card" data-key="cafe-novos">Cafe de Novos Membros</button>
+        </div>
+      </div>
     </section>
 
-    <section id="informacoes" class="section info-flow">
-      <article>
-        <h3>Cultos</h3>
-        <ul>
-          <li><strong>Quinta-feira:</strong> 20:00h</li>
-          <li><strong>Domingo:</strong> 09:00h e 18:00h</li>
-          <li><strong>Endereco:</strong> Av. Nordestina, 4850</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Dizimos e Ofertas</h3>
-        <ul>
-          <li><strong>Chave Pix (CNPJ):</strong> 20.825.094/0001-45</li>
-          <li><strong>Nome:</strong> Casa do Oleiro</li>
-          <li><strong>Banco:</strong> Cora</li>
-          <li><strong>Agencia:</strong> 0001</li>
-          <li><strong>Conta:</strong> 1175123-9</li>
-        </ul>
-      </article>
+    <section class="section cdo-front-section" aria-label="Fundo Casa do Oleiro">
+      <div class="cdo-front-caption" id="cdoFrontCaption">
+        <p class="caption-main">
+          <span class="caption-line caption-line-top">PROFETI</span>
+          <span class="caption-line caption-line-bottom">ZANDO</span>
+          <span class="caption-year">2026</span>
+        </p>
+        <p class="caption-sub">EXPANSAO&nbsp;&nbsp;ROMPER&nbsp;&nbsp;AVANCO</p>
+      </div>
     </section>
 
     <section class="section">
-      <h2>Midia</h2>
-      <article class="live-highlight">
-        <h3>Transmissao ao Vivo</h3>
-        <p>Participe da live oficial da Casa do Oleiro Church.</p>
-        <div class="live-grid">
-          <article class="live-item" data-video-id="aDkX_C4Obsc">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">
-              <img src="https://img.youtube.com/vi/aDkX_C4Obsc/hqdefault.jpg" alt="Preview live 1" />
-            </a>
-            <span class="live-badge" hidden>AO VIVO AGORA</span>
-            <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">Batismo de Jesus | Bispo Marcos Lopes | Domingo as 09:00 Horas</a>
-          </article>
-          <article class="live-item" data-video-id="1zjSLJDwMrU">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">
-              <img src="https://img.youtube.com/vi/1zjSLJDwMrU/hqdefault.jpg" alt="Preview live 2" />
-            </a>
-            <span class="live-badge" hidden>AO VIVO AGORA</span>
-            <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">Ministro Deivid Araujo | Domingo as 18:00 Horas</a>
-          </article>
-          <article class="live-item" data-video-id="J2LR5huWOEI">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">
-              <img src="https://img.youtube.com/vi/J2LR5huWOEI/hqdefault.jpg" alt="Preview live 3" />
-            </a>
-            <span class="live-badge" hidden>AO VIVO AGORA</span>
-            <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">Agindo Deus, Quem Impedira? | Bispo Marcos Lopes | Domingo as 18:00 Horas</a>
-          </article>
+      <article class="instagram-embed-card">
+        <h2 class="cdo-15-title">CDO <span class="cdo-15-hand">15</span> Anos</h2>
+        <div class="instagram-square-player">
+          <video controls preload="metadata" playsinline>
+            <source src="assets/cdo15anos.mp4" type="video/mp4" />
+            Seu navegador nao suporta video em HTML5.
+          </video>
         </div>
       </article>
-      <div class="grid-two">
-        <article class="panel media-card">
-          <h3>Galeria</h3>
-          <p>Fotos de cultos, convidados e eventos especiais.</p>
-          <div class="gallery-placeholders">
-            <div></div><div></div><div></div>
+      <div class="media-contrast">
+        <article class="live-highlight">
+          <h3>Transmissoes</h3>
+          <p>Participe da live oficial da Casa do Oleiro Church.</p>
+          <div class="live-grid">
+            <article class="live-item" data-video-id="aDkX_C4Obsc">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">
+                <img src="https://img.youtube.com/vi/aDkX_C4Obsc/hqdefault.jpg" alt="Preview live 1" />
+              </a>
+              <span class="live-badge" hidden>AO VIVO AGORA</span>
+              <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">Batismo de Jesus | Bispo Marcos Lopes | Domingo as 09:00 Horas</a>
+            </article>
+            <article class="live-item" data-video-id="1zjSLJDwMrU">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">
+                <img src="https://img.youtube.com/vi/1zjSLJDwMrU/hqdefault.jpg" alt="Preview live 2" />
+              </a>
+              <span class="live-badge" hidden>AO VIVO AGORA</span>
+              <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">Ministro Deivid Araujo | Domingo as 18:00 Horas</a>
+            </article>
+            <article class="live-item" data-video-id="J2LR5huWOEI">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">
+                <img src="https://img.youtube.com/vi/J2LR5huWOEI/hqdefault.jpg" alt="Preview live 3" />
+              </a>
+              <span class="live-badge" hidden>AO VIVO AGORA</span>
+              <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">Agindo Deus, Quem Impedira? | Bispo Marcos Lopes | Domingo as 18:00 Horas</a>
+            </article>
           </div>
         </article>
-        <article class="panel media-card">
-          <h3>Videos</h3>
-          <p>Acompanhe mensagens e transmissoes no canal oficial.</p>
-          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@casadooleirocdo">Abrir canal no YouTube</a>
-        </article>
+        <div class="grid-two">
+          <article class="panel media-card">
+            <h3>Galeria</h3>
+            <p>Fotos de cultos, convidados e eventos especiais.</p>
+            <div class="gallery-placeholders">
+              <div></div><div></div><div></div>
+            </div>
+          </article>
+          <article class="panel media-card">
+            <h3>Videos</h3>
+            <p>Acompanhe mensagens e transmissoes no canal oficial.</p>
+            <a class="btn" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@casadooleirocdo">Abrir canal no YouTube</a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -126,6 +116,17 @@
     <p>Casa do Oleiro Church</p>
     <p>© <span id="year"></span></p>
   </footer>
+
+  <aside class="ministry-modal" id="ministryModal" hidden>
+    <div class="ministry-modal-backdrop" id="ministryModalBackdrop"></div>
+    <article class="ministry-modal-panel" role="dialog" aria-modal="true" aria-labelledby="ministryModalTitle">
+      <button class="ministry-modal-close" id="ministryModalClose" aria-label="Fechar">×</button>
+      <p class="ministry-modal-kicker" id="ministryModalKicker">Ministerio</p>
+      <h2 id="ministryModalTitle">Titulo</h2>
+      <p class="ministry-modal-text" id="ministryModalText"></p>
+      <div class="ministry-modal-meta" id="ministryModalMeta"></div>
+    </article>
+  </aside>
 
   <script src="script.js"></script>
 </body>
