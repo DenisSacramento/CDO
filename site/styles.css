@@ -110,6 +110,10 @@ body {
   z-index: 0;
 }
 
+.cdo-front-section::after {
+  content: none;
+}
+
 .cdo-front-caption {
   position: absolute;
   left: 50%;
@@ -591,8 +595,21 @@ h2 { margin: 0 0 14px; font-size: 1.4rem; }
 
   .cdo-front-section::before {
     background-attachment: fixed;
+    background-size: cover;
+    filter: grayscale(100%) blur(10px);
+  }
+
+  .cdo-front-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("assets/cdo frente.png");
     background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     filter: grayscale(100%);
+    z-index: 0;
   }
 
   .caption-main {
