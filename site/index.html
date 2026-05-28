@@ -3,119 +3,217 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casa do Oleiro Church</title>
-  <meta name="description" content="Casa do Oleiro Church - Nosso maior chamado e amar voce." />
+  <title>Casa do Oleiro Church | Nosso maior chamado é amar você</title>
+  <meta name="description" content="Casa do Oleiro Church em São Paulo. Cultos, ministérios, transmissões e contato oficial da igreja." />
+  <meta name="theme-color" content="#111111" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Casa do Oleiro Church" />
+  <meta property="og:description" content="Nosso maior chamado é amar você. Conheça os cultos, ministérios e transmissões da Casa do Oleiro Church." />
+  <meta property="og:image" content="assets/banner-enhanced-opt.jpg" />
+  <link rel="preload" as="image" href="assets/banner-enhanced-opt.jpg" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@600&family=Kaushan+Script&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#ministerios">Pular para o conteúdo</a>
+  <header class="site-header" aria-label="Cabeçalho da Casa do Oleiro Church">
+    <a class="brand-link" href="#" aria-label="Casa do Oleiro Church">
+      <img class="brand-logo" src="assets/cdo.jpg" width="80" height="80" alt="" />
+      <span>
+        <strong>Casa do Oleiro</strong>
+        <small>Church</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="#ministerios">Ministérios</a>
+      <a href="#transmissoes">Transmissões</a>
+      <a href="#contribuicao">Contribuição</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="header-cta" href="#contato">Visite-nos</a>
+  </header>
+
   <main>
+    <h1 class="sr-only">Casa do Oleiro Church</h1>
     <section class="banner-section full-bleed" aria-label="Banner da igreja">
       <picture>
         <source media="(max-width: 900px)" srcset="assets/bannermobile.png" />
-        <img class="banner-image" src="assets/banner-enhanced.png" alt="Banner Casa do Oleiro Church" />
+        <img class="banner-image" src="assets/banner-enhanced-opt.jpg" width="1825" height="862" alt="Banner Casa do Oleiro Church" fetchpriority="high" decoding="async" />
       </picture>
     </section>
 
     <section class="phrase-section full-bleed" aria-label="Frase da igreja">
       <picture>
-        <source media="(max-width: 900px)" srcset="assets/yt_bannermobile.png" />
-        <img class="phrase-image" src="assets/yt_banner.jpg" alt="Nosso maior chamado e amar voce" />
+        <source media="(max-width: 900px)" srcset="assets/yt-bannermobile-opt.jpg" />
+        <img class="phrase-image" src="assets/yt_banner.jpg" width="1138" height="188" alt="Nosso maior chamado é amar você" loading="lazy" decoding="async" />
       </picture>
     </section>
 
     <section class="section ministries-hub" id="ministerios">
-      <div class="carousel-wrap" aria-label="Carrossel de ministerios">
+      <div class="section-heading ministries-heading">
+        <p class="eyebrow">Comunidade</p>
+        <h2>Encontre seu lugar na Casa do Oleiro</h2>
+        <p>Conheça os ministérios, participe dos cultos e caminhe em comunhão com a igreja.</p>
+      </div>
+      <div class="carousel-wrap" aria-label="Carrossel de ministérios">
         <div class="carousel-track" id="ministryCarousel">
-          <button class="ministry-card is-active" data-key="cultos">Cultos</button>
-          <button class="ministry-card" data-key="homens">Rede de Homens</button>
-          <button class="ministry-card" data-key="mulheres">Rede de Mulheres</button>
-          <button class="ministry-card" data-key="conect">Conect</button>
-          <button class="ministry-card" data-key="achados">Achados</button>
-          <button class="ministry-card" data-key="ted">TED Escola Biblica</button>
-          <button class="ministry-card" data-key="kids">Kids</button>
-          <button class="ministry-card" data-key="evangelismo">Evangelismo</button>
-          <button class="ministry-card" data-key="cafe-novos">Cafe de Novos Membros</button>
+          <button class="ministry-card is-active" type="button" data-key="cultos">Cultos</button>
+          <button class="ministry-card" type="button" data-key="homens">Rede de Homens</button>
+          <button class="ministry-card" type="button" data-key="mulheres">Rede de Mulheres</button>
+          <button class="ministry-card" type="button" data-key="conect">Conect</button>
+          <button class="ministry-card" type="button" data-key="achados">Achados</button>
+          <button class="ministry-card" type="button" data-key="ted">TED Escola Bíblica</button>
+          <button class="ministry-card" type="button" data-key="kids">Kids</button>
+          <button class="ministry-card" type="button" data-key="evangelismo">Evangelismo</button>
+          <button class="ministry-card" type="button" data-key="cafe-novos">Café de Novos Membros</button>
         </div>
       </div>
     </section>
 
-    <section class="section cdo-front-section" aria-label="Fundo Casa do Oleiro">
+    <section class="section cdo-front-section" aria-label="Tema profético da Casa do Oleiro">
+      <img class="cdo-front-image" src="assets/cdo-frente-opt.jpg" width="1216" height="741" alt="" loading="lazy" decoding="async" />
       <div class="cdo-front-caption" id="cdoFrontCaption">
         <p class="caption-main">
           <span class="caption-line caption-line-top">PROFETI</span>
           <span class="caption-line caption-line-bottom">ZANDO</span>
           <span class="caption-year">2026</span>
         </p>
-        <p class="caption-sub">EXPANSAO&nbsp;&nbsp;ROMPER&nbsp;&nbsp;AVANCO</p>
+        <p class="caption-sub">EXPANSÃO&nbsp;&nbsp;ROMPER&nbsp;&nbsp;AVANÇO</p>
       </div>
     </section>
 
-    <section class="section">
-      <article class="instagram-embed-card">
-        <h2 class="cdo-15-title">CDO <span class="cdo-15-hand">15</span> Anos</h2>
-        <div class="instagram-square-player">
-          <video controls preload="metadata" playsinline>
-            <source src="assets/cdo15anos.mp4" type="video/mp4" />
-            Seu navegador nao suporta video em HTML5.
-          </video>
+    <div class="mosaic-band">
+      <div class="random-mosaic-bg" id="randomMosaicBg" aria-hidden="true"></div>
+
+      <section class="section media-section" id="transmissoes">
+        <div class="section-heading">
+          <p class="eyebrow">Mensagens e momentos</p>
+          <h2>Uma igreja para acompanhar de perto</h2>
+          <p>Veja celebrações, transmissões e registros especiais da Casa do Oleiro Church.</p>
         </div>
-      </article>
-      <div class="media-contrast">
-        <article class="live-highlight">
-          <h3>Transmissoes</h3>
-          <p>Participe da live oficial da Casa do Oleiro Church.</p>
-          <div class="live-grid">
-            <article class="live-item" data-video-id="aDkX_C4Obsc">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">
-                <img src="https://img.youtube.com/vi/aDkX_C4Obsc/hqdefault.jpg" alt="Preview live 1" />
-              </a>
-              <span class="live-badge" hidden>AO VIVO AGORA</span>
-              <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">Batismo de Jesus | Bispo Marcos Lopes | Domingo as 09:00 Horas</a>
-            </article>
-            <article class="live-item" data-video-id="1zjSLJDwMrU">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">
-                <img src="https://img.youtube.com/vi/1zjSLJDwMrU/hqdefault.jpg" alt="Preview live 2" />
-              </a>
-              <span class="live-badge" hidden>AO VIVO AGORA</span>
-              <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">Ministro Deivid Araujo | Domingo as 18:00 Horas</a>
-            </article>
-            <article class="live-item" data-video-id="J2LR5huWOEI">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">
-                <img src="https://img.youtube.com/vi/J2LR5huWOEI/hqdefault.jpg" alt="Preview live 3" />
-              </a>
-              <span class="live-badge" hidden>AO VIVO AGORA</span>
-              <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">Agindo Deus, Quem Impedira? | Bispo Marcos Lopes | Domingo as 18:00 Horas</a>
-            </article>
+        <article class="instagram-embed-card">
+          <h2 class="cdo-15-title">CDO <span class="cdo-15-hand">15</span> Anos</h2>
+          <div class="instagram-square-player">
+            <video controls preload="none" playsinline>
+              <source src="assets/cdo15anos.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo em HTML5.
+            </video>
           </div>
         </article>
-        <div class="grid-two">
-          <article class="panel media-card">
-            <h3>Galeria</h3>
-            <p>Fotos de cultos, convidados e eventos especiais.</p>
-            <div class="gallery-placeholders">
-              <div></div><div></div><div></div>
+        <div class="media-contrast">
+          <article class="live-highlight">
+            <div class="media-heading-row">
+              <div>
+                <p class="eyebrow eyebrow-on-dark">Online</p>
+                <h3>Transmissões</h3>
+              </div>
+              <a class="btn btn-light" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@casadooleirocdo">Canal oficial</a>
+            </div>
+            <p>Participe da live oficial da Casa do Oleiro Church.</p>
+            <div class="live-grid">
+              <article class="live-item" data-video-id="aDkX_C4Obsc">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">
+                  <img src="https://img.youtube.com/vi/aDkX_C4Obsc/hqdefault.jpg" width="480" height="360" alt="Preview live 1" loading="lazy" decoding="async" />
+                </a>
+                <span class="live-badge" hidden>AO VIVO AGORA</span>
+                <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/aDkX_C4Obsc?si=0FquofeicmbujgCo">Batismo de Jesus | Bispo Marcos Lopes | Domingo às 09:00 Horas</a>
+              </article>
+              <article class="live-item" data-video-id="1zjSLJDwMrU">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">
+                  <img src="https://img.youtube.com/vi/1zjSLJDwMrU/hqdefault.jpg" width="480" height="360" alt="Preview live 2" loading="lazy" decoding="async" />
+                </a>
+                <span class="live-badge" hidden>AO VIVO AGORA</span>
+                <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/1zjSLJDwMrU?si=gB8Zu33avaKec0Pg">Ministro Deivid Araújo | Domingo às 18:00 Horas</a>
+              </article>
+              <article class="live-item" data-video-id="J2LR5huWOEI">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">
+                  <img src="https://img.youtube.com/vi/J2LR5huWOEI/hqdefault.jpg" width="480" height="360" alt="Preview live 3" loading="lazy" decoding="async" />
+                </a>
+                <span class="live-badge" hidden>AO VIVO AGORA</span>
+                <a class="live-title" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/J2LR5huWOEI?si=Wn-0ES5QMbrJFkCv">Agindo Deus, Quem Impedirá? | Bispo Marcos Lopes | Domingo às 18:00 Horas</a>
+              </article>
             </div>
           </article>
-          <article class="panel media-card">
-            <h3>Videos</h3>
-            <p>Acompanhe mensagens e transmissoes no canal oficial.</p>
-            <a class="btn" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@casadooleirocdo">Abrir canal no YouTube</a>
-          </article>
+          <div class="grid-two">
+            <article class="panel media-card">
+              <h3>Galeria</h3>
+              <p>Fotos de cultos, convidados e eventos especiais.</p>
+              <div class="gallery-placeholders">
+                <a class="gallery-post" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DYiP6xdIgcQ/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" aria-label="Abrir postagem Pentecost Day 2026 no Instagram">
+                  <img src="assets/instagram-pentecost-day-2026.png" width="414" height="502" alt="Postagem Pentecost Day 2026 da Casa do Oleiro no Instagram" loading="lazy" decoding="async" />
+                </a>
+                <a class="gallery-post" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DR9XzHXDcwD/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" aria-label="Abrir postagem Profetizando 2026 no Instagram">
+                  <img src="assets/instagram-profetizando-2026.png" width="403" height="450" alt="Postagem Profetizando 2026 da Casa do Oleiro no Instagram" loading="lazy" decoding="async" />
+                </a>
+                <a class="gallery-post" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DJ4t07KvwuJ/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" aria-label="Abrir postagem Ceia 2026 no Instagram">
+                  <img src="assets/instagram-ceia-2026.png" width="407" height="512" alt="Postagem de ceia da Casa do Oleiro no Instagram" loading="lazy" decoding="async" />
+                </a>
+              </div>
+              <a class="btn btn-instagram media-card-action" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/casadooleirocdo/">Ver postagens no Instagram</a>
+            </article>
+            <article class="panel media-card">
+              <h3>Vídeos</h3>
+              <p>Acompanhe mensagens e transmissões no canal oficial.</p>
+              <a class="btn" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@casadooleirocdo">Abrir canal no YouTube</a>
+            </article>
+          </div>
         </div>
+      </section>
+
+    <section id="contribuicao" class="section contribution">
+      <div class="contribution-copy">
+        <p class="eyebrow">Dízimos e ofertas</p>
+        <h2>Contribuição</h2>
+        <p>Use o QR Code Pix ou copie a chave abaixo para contribuir com a Casa do Oleiro Church.</p>
+        <dl class="pix-details">
+          <div>
+            <dt>Favorecido</dt>
+            <dd>Casa do Oleiro</dd>
+          </div>
+          <div>
+            <dt>CNPJ / Pix</dt>
+            <dd>20.825.094/0001-45</dd>
+          </div>
+          <div>
+            <dt>Instituição</dt>
+            <dd>Cora SCFI</dd>
+          </div>
+          <div>
+            <dt>Conta</dt>
+            <dd>Ag. 001 · Conta 1175123-9</dd>
+          </div>
+        </dl>
       </div>
+      <article class="pix-card" aria-label="QR Code Pix para dízimos e ofertas">
+        <img class="pix-qr" src="assets/pix-contribuicao-qrcode.png" width="360" height="360" alt="QR Code Pix para contribuição da Casa do Oleiro" loading="lazy" decoding="async" />
+        <div class="pix-actions">
+          <p class="pix-key">Chave Pix: <strong>20.825.094/0001-45</strong></p>
+          <button class="btn pix-copy-button" type="button" data-copy-pix="00020126570014br.gov.bcb.pix0114208250940001450217Dizimos e Ofertas5204000053039865802BR5914CASA DO OLEIRO6009SAO PAULO62070503***63041463">Copiar Pix</button>
+        </div>
+      </article>
     </section>
 
     <section id="contato" class="section contact">
-      <h2>Contato</h2>
-      <p>Av. Nordestina, 4850</p>
+      <div class="contact-copy">
+        <p class="eyebrow">Venha nos visitar</p>
+        <h2>Contato</h2>
+        <p>Av. Nordestina, 4850</p>
+      </div>
+      <div class="contact-map" aria-label="Mapa da Casa do Oleiro Church">
+        <iframe
+          title="Localização da Casa do Oleiro Church"
+          src="https://www.google.com/maps?q=Av.%20Nordestina%2C%204850%2C%20S%C3%A3o%20Paulo&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="hero-actions">
         <a class="btn btn-instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/casadooleirocdo/">Instagram</a>
         <a class="btn btn-youtube" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@casadooleirocdo">YouTube</a>
       </div>
     </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -127,13 +225,13 @@
     <div class="ministry-modal-backdrop" id="ministryModalBackdrop"></div>
     <article class="ministry-modal-panel" role="dialog" aria-modal="true" aria-labelledby="ministryModalTitle">
       <button class="ministry-modal-close" id="ministryModalClose" aria-label="Fechar">×</button>
-      <p class="ministry-modal-kicker" id="ministryModalKicker">Ministerio</p>
-      <h2 id="ministryModalTitle">Titulo</h2>
+      <p class="ministry-modal-kicker" id="ministryModalKicker">Ministério</p>
+      <h2 id="ministryModalTitle">Título</h2>
       <p class="ministry-modal-text" id="ministryModalText"></p>
       <div class="ministry-modal-meta" id="ministryModalMeta"></div>
     </article>
   </aside>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
